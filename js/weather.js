@@ -11,7 +11,7 @@ function geoOk(position) {
     .then((response) => response.json())
     .then((data) => {
       CurrentLocation.innerText = data.name;
-      CurrentWeather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      CurrentWeather.innerText = data.weather[0].main;
     });
 }
 
