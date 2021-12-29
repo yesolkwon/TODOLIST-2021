@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momemtum app</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="login-part">
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="Hello, What is your name?"
+        />
+        <input type="submit" value="Login" />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+    </div>
+
+    <div class="clock-part">
+      <h2 id="clock"></h2>
+    </div>
+
+    <div class="todolist-part">
+      <form id="todo-form">
+        <input required type="text" placeholder="Tell me what you need to do" />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <div class="weather-part">
+      <div id="location"></div>
+      <div id="weather"></div>
+    </div>
+
+    <div class="quotes-part">
+      <div id="quotes">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
+  </body>
+</html>
