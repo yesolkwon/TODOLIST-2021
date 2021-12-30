@@ -6,41 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momemtum app</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="login-part">
-      <form class="hidden" id="login-form">
-        <input
-          required
-          maxlength="15"
-          type="text"
-          placeholder="Hello, What is your name?"
-        />
-        <input type="submit" value="Login" />
-      </form>
-      <h1 id="greeting" class="hidden"></h1>
-    </div>
+    <header>
+      <div class="quotes-part">
+        <div id="quotes">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="weather-part">
+        <div>
+          <div id="location"></div>
+          <div id="weather"></div>
+        </div>
+      </div>
+    </header>
 
     <div class="clock-part">
       <h2 id="clock"></h2>
     </div>
 
+    <div class="login-part">
+      <div>
+        <div class="login-name">Hi there,what is your name?</div>
+        <form class="hidden" id="login-form">
+          <input required maxlength="15" type="text" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+    </div>
+
     <div class="todolist-part">
-      <form id="todo-form">
-        <input required type="text" placeholder="Tell me what you need to do" />
-      </form>
-      <ul id="todo-list"></ul>
-    </div>
-
-    <div class="weather-part">
-      <div id="location"></div>
-      <div id="weather"></div>
-    </div>
-
-    <div class="quotes-part">
-      <div id="quotes">
-        <span></span>
-        <span></span>
+     <form id="todo-form" class="hidden">
+          <input
+            required
+            type="text"
+            placeholder="What is your main focus for today?"
+          />
+        </form>
+        <ul id="todo-list"></ul>
       </div>
     </div>
 

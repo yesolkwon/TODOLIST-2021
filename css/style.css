@@ -1,21 +1,79 @@
+* {
+  font-family: "Roboto Mono", monospace;
+  color: rgba(168, 163, 163, 0.822);
+}
+
 .hidden {
   display: none;
 }
 
-img {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  width: 100%;
-  height: auto;
+header {
+  display: flex;
+  justify-content: space-between;
 }
-
-.login-part {
-  margin-top: 100px;
+.weather-part {
+  font-size: 12px;
+}
+.clock-part {
+  font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#clock {
+  color: gold;
+}
+
+.login-name {
+  font-size: 30px;
+  text-align: center;
+}
+
+#login-form input {
+  border: none;
+  width: 500px;
+  margin-top: 10px;
+  border-bottom: 2px gold solid;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.login-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.todolist-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todolist-question {
+  text-align: center;
+}
+
+.todolist-part {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#todo-form input {
+  border: none;
+  width: 500px;
+  border-bottom: 2px solid gold;
+}
+
+#todo-form input::placeholder {
+  text-align: center;
+}
+.quotes-part {
+  font-size: 12px;
+  width: 33%;
 }
